@@ -25,7 +25,6 @@
     <?php
     $data = Session::get('data');
     ?>
-
     {!! Form::open([
             'url' => '/clients/create/cvrapi'
 

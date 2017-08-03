@@ -5,6 +5,15 @@ use Illuminate\Database\Eloquent\Model;
 use Zizaco\Entrust\EntrustRole;
 use App\Models\Permissions;
 
+/**
+ * App\Models\Role
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Permissions[] $permissions
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Permissions[] $perms
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Role[] $userRole
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\User[] $users
+ * @mixin \Eloquent
+ */
 class Role extends EntrustRole
 {
     protected $fillable = [

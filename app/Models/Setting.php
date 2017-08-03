@@ -3,6 +3,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\Setting
+ *
+ * @property-read \App\Models\Task $tasks
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Setting extends Model
 {
     protected $fillable = [

@@ -4,6 +4,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Carbon;
 
+/**
+ * App\Models\Task
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Activity[] $activity
+ * @property-read \App\Models\Client $client
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Comment[] $comments
+ * @property-read \App\Models\User $creator
+ * @property-read mixed $assigned_user
+ * @property-read mixed $creator_user
+ * @property-read mixed $days_until_deadline
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\TaskTime[] $time
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Task extends Model
 {
 

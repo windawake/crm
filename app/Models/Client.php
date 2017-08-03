@@ -3,6 +3,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\Client
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Document[] $documents
+ * @property-read mixed $assigned_user
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Invoice[] $invoices
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Lead[] $leads
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Task[] $tasks
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Client extends Model
 {
 

@@ -3,6 +3,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\Comment
+ *
+ * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $commentable
+ * @property-read \App\Models\Task $task
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Comment extends Model
 {
     protected $fillable = [

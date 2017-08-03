@@ -71,7 +71,8 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        return view('clients.create')
+        dd($this->users->getAllUsersWithDepartments());
+        return view('clients/create')
             ->withUsers($this->users->getAllUsersWithDepartments())
             ->withIndustries($this->clients->listAllIndustries());
     }

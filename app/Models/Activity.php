@@ -4,6 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\Activity
+ *
+ * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $source
+ * @property-read \App\Models\Task $task
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Activity extends model
 {
     /**

@@ -4,6 +4,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Dinero;
 
+/**
+ * App\Models\Integration
+ *
+ * @mixin \Eloquent
+ */
 class Integration extends Model
 {
     protected $fillable = ['name', 'client_id', 'client_secret', 'api_key', 'org_id', 'api_type'];

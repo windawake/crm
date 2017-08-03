@@ -3,6 +3,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\TaskTime
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Invoice[] $invoices
+ * @property-read \App\Models\Task $tasks
+ * @mixin \Eloquent
+ */
 class TaskTime extends Model
 {
     protected $fillable = [

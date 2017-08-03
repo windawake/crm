@@ -8,6 +8,18 @@ use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Models\Setting;
 
+/**
+ * App\Models\DripEmailer
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Department[] $department
+ * @property-read mixed $name_and_department
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Lead[] $leads
+ * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Role[] $roles
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Task[] $tasks
+ * @property-read \App\Models\RoleUser $userRole
+ * @mixin \Eloquent
+ */
 class DripEmailer extends Authenticatable
 {
     use Notifiable, EntrustUserTrait;

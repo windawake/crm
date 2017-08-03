@@ -4,6 +4,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Carbon;
 
+/**
+ * App\Models\Lead
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Activity[] $activity
+ * @property-read \App\Models\Client $client
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Comment[] $comments
+ * @property-read \App\Models\User $creator
+ * @property-read mixed $days_until_contact
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Lead extends Model
 {
     protected $fillable = [

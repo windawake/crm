@@ -9,7 +9,20 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
+Route::group(['prefix' => 'test'], function () {
+    Route::get('/email', 'TestController@email');
+    Route::get('/collect', 'TestController@collect');
+    Route::get('/queue', 'TestController@queue');
+});
 Route::resource('test', 'TestController');
+
+Route::get('/event', function(){
+    Event::fire(new \App\Events\SomeEvent(3));
+    return 'hello world';
+
+});
+
 
 Route::auth();
 Route::get('/logout', 'Auth\LoginController@logout');

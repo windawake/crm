@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Setting;
 use DB;
 use Carbon;
 use App\Http\Requests;
